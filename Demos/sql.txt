@@ -1,0 +1,21 @@
+
+CREATE TABLE IF NOT EXISTS `items` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `title` varchar(200) NOT NULL,
+  `year` int(4) NOT NULL,
+  `length` varchar(100) DEFAULT NULL,
+  `description` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+
+--
+-- Dumping data for table `items`
+--
+
+INSERT INTO `items` (`id`, `title`, `year`, `length`, `description`) VALUES
+(1, 'Star Trek: The Motion Picture', 1979, '132 minutes', 'An alien phenomenon of unprecedented size and power is approaching Earth, destroying everything in its path. The only starship in range is the USS Enterprise--still in drydock after a major overhaul. As Captain Willard Decker readies his ship and his crew to face this menace, Admiral James T. Kirk arrives with orders to take command of the Enterprise and intercept the intruder. But it has been three years since Kirk last commanded the Enterprise on its historic five year mission... is he up to the task of saving the Earth? '),
+(2, 'Star Trek', 2009, '127 minutes', 'On the day of James Kirk''s birth, his father dies on his ship in a last stand against a mysterious alien time-traveling vessel looking for Ambassador Spock, who, in this time, is also a child on Vulcan disdained by his neighbors for his half-human heritage. Twenty-five years later, Kirk has grown into a young troublemaker. Challenged by Captain Christopher Pike to realize his potential in Starfleet, he comes to annoy instructors like young Commander Spock. Suddenly, there is an emergency at Vulcan and the newly commissioned USS Enterprise is crewed with promising cadets like Nyota Uhura, Hikaru Sulu, Pavel Chekov and even Kirk himself, thanks to Leonard McCoy''s medical trickery. Together, this crew will have an adventure in the final frontier where the old legend is altered forever as a new version of it begins.'),
+(3, 'Star Trek Into Darkness', 2013, '132 mins.', 'When the crew of the Enterprise is called back home, they find an unstoppable force of terror from within their own organization has detonated the fleet and everything it stands for, leaving our world in a state of crisis. With a personal score to settle, Captain Kirk leads a manhunt to a war-zone world to capture a one man weapon of mass destruction. As our heroes are propelled into an epic chess game of life and death, love will be challenged, friendships will be torn apart, and sacrifices must be made for the only family Kirk has left: his crew.'),
+(4, 'Star Trek: First Contact', 1996, '111 minute', 'The time is the 24th century and the ship is the newly-commissioned Enterprise-E. Its captain, Jean-Luc Picard, has been ordered not to interfere in a battle between a Borg Cube and ships from the Federation. However, seeing the Federation is about to lose, Picard ignore his orders and takes command of the defending fleet. With his knowledge of the Cube''s weak spot, they destroy it. However, a small part of it escapes and plots a course directly for Earth. The Enterprise chases it and enters a time distortion created by the Borg. They end up in the mid-21st century, and their only chance of stopping the Borg from assimilating Earth is to help Zefram Cochrane make his famous first faster-than-light travel to the stars.'),
+(5, 'Star Trek: Insurrection', 1998, '103 minutes', 'When the crew of the Enterprise learn of a Federation plot against the inhabitants of a unique planet, Captain Picard begins an open rebellion. '),
+(6, 'Star Trek IV: The Voyage Home', 1986, '119 minutes', 'To save Earth from an alien probe, Admiral Kirk and his fugitive crew go back in time to 20th century Earth to retrieve the only beings who can communicate with it, humpback whales. ');
